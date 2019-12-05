@@ -1,0 +1,143 @@
+/* select div*/
+@import url("https://fonts.googleapis.com/css?family=Caveat|Orbitron&display=swap");
+html {
+  height: 100%;
+}
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(assets/images/mobileback3.png)  center no-repeat black;
+}
+@media screen and (max-width: 604px) {
+  body {
+    min-height: 100%;
+    background-color:yellow;
+    color: black;
+    background-image: url(assets/images/mobileback2.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size:90%;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+  #contact-card {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    /* background-image: url("assets/images/call.png");
+    background-repeat: no-repeat;
+    background-position: right bottom; */
+  }
+  #choose {
+    margin-top:10%;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(31, 3, 31);
+  }
+  #resultlist{
+    margin:0px;
+  }
+}
+
+@media screen and (min-width: 604px) {
+  body {
+   min-height: 100%;
+    color: black;
+    background-image: url(assets/images/back1.png);
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+  .card1 {
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+  }
+  #contact-card {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    background-image: url("assets/images/call.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  #choose {
+    margin-top: 20%;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(31, 3, 31);
+  }
+  #resultlist{
+    margin-top: 20%;
+  }
+}
+.collapsible {
+  background-color: black;
+  color: white;
+
+}
+.collapsible-header {
+  background-color: black;
+  border: none;
+  font-family: "Orbitron", sans-serif;
+}
+.collapsible-header:hover {
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.collapsible-body {
+  background-color: black;
+  border: none;
+}
+#check {
+  background-color: rgb(31, 3, 31);
+}
+#back {
+  background-color: rgb(31, 3, 31);
+}
+#teams{
+  color: rgb(31, 3, 31);
+  border-color:rgb(31, 3, 31);
+}
+#teams:hover{
+  border-color:rgb(31, 3, 31);
+}
+#team{
+  color: rgb(31, 3, 31) !important;
+}
+#playerface{  
+  box-shadow: 0 8px 6px -6px black;
+}
+
+/* #lit {
+  background: #00d2ff; /*  fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+  background: linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} */

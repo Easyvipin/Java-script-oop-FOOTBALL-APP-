@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Compiled and minified JavaScript -->
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="se-pre-con"></div>
+    <!-- select box -->
+    <center>
+      <div class="input-field col s12" id="choose">
+        <select id="teams"  >
+          <option id="team"  value="0"  style="color:black;" disabled selected>Choose your team</option>
+          <option id="team" style="color:black;" value="58">Aston Villa FC</option><option id="team" value="61">Chelsea FC</option><option id="team" value="62">Everton FC</option><option id="team" value="64">Liverpool FC</option><option id="team" value="65">Manchester City FC</option><option id="team" value="66">Manchester United FC</option><option id="team" value="67">Newcastle United FC</option><option id="team" value="68">Norwich City FC</option><option id="team" value="73">Tottenham Hotspur FC</option><option id="team" value="57">Arsenal FC</option><option id="team" value="76">Wolverhampton Wanderers FC</option><option id="team" value="328">Burnley FC</option><option id="team" value="338">Leicester City FC</option><option id="team" value="340">Southampton FC</option><option id="team" value="57">Arsenal FC</option>
+            <option id="team" value="58">Aston Villa FC</option>
+            <option id="team" value="61">Chelsea FC</option><option id="team" value="346">Watford FC</option><option id="team" value="354">Crystal Palace FC</option><option id="team" value="356">Sheffield United FC</option><option id="team" value="397">Brighton &amp; Hove Albion FC</option><option id="team" value="563">West Ham United FC</option><option id="team" value="1044">AFC Bournemouth</option>
+        </select>
+        <button
+          class="btn waves-effect waves-light"
+          id="check"
+          onclick="check()"
+          name="action"
+        >
+          CHECK
+        </button>
+      </div>
+    </center>
+    <!-- response space -->
+    <div class="card1" id="resultlist" style="display:none;">
+      <ul class="collapsible  popout">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons" id="lit">local_florist</i>CREST
+          </div>
+          <div class="collapsible-body">
+            <span id="image"></span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons" id="lit">games</i>VENUE
+          </div>
+          <div class="collapsible-body" style="color:black;">
+            <span id="information"></span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons" id="lit">phone</i>CONTACT
+          </div>
+          <div class="collapsible-body">
+            <span id="contacts"></span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons" id="lit">grain</i>SQUAD
+          </div>
+          <div class="collapsible-body">
+            <span
+              ><table class="highlight responsive-table" >
+                <thead>
+                  <tr>
+                    <th>NAME</th>
+                    <th>POS</th>
+                    <th>DOB</th>
+                    <th>NATION</th>
+                  </tr>
+                  <tbody id="squad"></tbody>
+                </thead>
+              </table>
+            </span>
+          </div>
+        </li>
+      </ul>
+      <button
+      class="btn waves-effect waves-light"
+      id="back"
+      style="display: none;"
+      onclick="backto()"
+      name="action"
+    >
+      BACK 
+      <i class="material-icons">back</i>
+    </button>
+    </div>
+    <!--response space closed -->
+    <!-- carousel -->
+    <div class="carousel" id="slide">
+        <a id="playerface" class="carousel-item" href="#five!"><img src="assets/images/de.png"></a>
+        <a id="playerface" class="carousel-item" href="#two!"><img src="assets/images/fab.png"></a>
+        <a id="playerface" class="carousel-item" href="#three!"><img src="assets/images/rash.png"></a>
+        <a id="playerface" class="carousel-item" href="#four!"><img src="assets/images/son.png"></a>
+        <a id="playerface" class="carousel-item" href="#five!"><img src="assets/images/zaha.png"></a>
+        <a id="playerface" class="carousel-item" href="#one!"><img src="assets/images/ber.png"></a>
+      </div>
+      <!-- carousel end -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll("select");
+        var instances = M.FormSelect.init(elems);
+      });
+    </script>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
