@@ -3,7 +3,8 @@ This  App helps to find Team details of Premier League.
 1. crest
 2. contacts
 3. squad
-
+### demo
+![demo](https://github.com/Easyvipin/Java-script-oop-FOOTBALL-APP-/blob/master/Document.gif)
 # FOCUS
 This project basically focus on javascript class structure and how it basically works.
 
@@ -117,4 +118,21 @@ squad: Array(31)
 29: {id: 7985, name: "Tammy Abraham", position: "Attacker", dateOfBirth: "1997-10-02T00:00:00Z", countryOfBirth: "England", …}
 30: {id: 25598, name: "Frank Lampard", position: null, dateOfBirth: "1978-06-20T00:00:00Z", countryOfBirth: "England", …}
 ```
+### Future Plans
+1.
+> Bring more leagues into this project.
+2.
+> SQUAD with images.
+3.
+> Team Calendar.
 
+### What i learnt through this project?
+1.
+> Handling response.
+2.
+> Less redundant code using class.
+3.
+> `THIS` keyword role in more depth.
+### EMAIL
+[@EASYVIPIN](VIPINCHANDRA555@GMAIL.COM)
+### BBYE!
